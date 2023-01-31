@@ -1,7 +1,9 @@
 <?php
 include('configBD.php');
-$propietario    = $_POST['propietario'];
-$placa          = trim($_POST['placa']);
+//ucwords pasar a mayúsculas solo la primera letra de toda la cadena
+$propietario    = ucwords($_POST['propietario']);
+//strtoupper Para pasar a Mayuscula
+$placa          = trim(strtoupper($_POST['placa']));
 
 //Verificando si existe el directorio
 $dirLocal = "files_cars";

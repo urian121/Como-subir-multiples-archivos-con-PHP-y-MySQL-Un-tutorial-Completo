@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500;700;800&display=swap');
+html, body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue !important;
+    margin:0;
+    padding: 0;
+  }
+input[type=text]{
+  text-transform: uppercase !important;
+}

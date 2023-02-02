@@ -43,6 +43,7 @@ include('configBD.php');
 $sqlQuery = "SELECT  c.*, c.id AS idCliente, f.* FROM clientes AS c
             INNER JOIN fotos_cars AS f
             ON c.placa = f.placa_cliente
+            GROUP BY c.placa
             ORDER BY c.fecha DESC"; 
 $resultadoSQL = mysqli_query($conn, $sqlQuery);  
 if(mysqli_num_rows($resultadoSQL) > 0){

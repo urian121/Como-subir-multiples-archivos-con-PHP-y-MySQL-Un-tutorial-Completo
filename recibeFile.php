@@ -16,6 +16,7 @@ $miDir         = opendir($dirLocal); //Habro el directorio
 if(isset($_POST['submit']) && count($_FILES['fotos_cars']['name'])>0){
 
 // Recorrer cada archivo subido
+
 foreach ($_FILES['fotos_cars']['name'] as $i => $name) {
   //strlen métod de php pues devuelve la longitud de una cadena
   if (strlen($_FILES['fotos_cars']['name'][$i]) > 1) {
